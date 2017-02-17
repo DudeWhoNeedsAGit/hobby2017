@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blach Hole Clicker.Plugins", "Blach Hole Clicker.Plugins.csproj", "{6A95F70D-3AFA-1BA6-7D8C-00E30778C17C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blach Hole Clicker", "Blach Hole Clicker.csproj", "{39DBF9AE-95EC-4EA1-570B-CAFF59EB172B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blach Hole Clicker.Editor.Plugins", "Blach Hole Clicker.Editor.Plugins.csproj", "{1C49009C-2D96-ADCF-12BE-DC69FF6086BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A95F70D-3AFA-1BA6-7D8C-00E30778C17C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A95F70D-3AFA-1BA6-7D8C-00E30778C17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A95F70D-3AFA-1BA6-7D8C-00E30778C17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A95F70D-3AFA-1BA6-7D8C-00E30778C17C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39DBF9AE-95EC-4EA1-570B-CAFF59EB172B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39DBF9AE-95EC-4EA1-570B-CAFF59EB172B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39DBF9AE-95EC-4EA1-570B-CAFF59EB172B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39DBF9AE-95EC-4EA1-570B-CAFF59EB172B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C49009C-2D96-ADCF-12BE-DC69FF6086BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C49009C-2D96-ADCF-12BE-DC69FF6086BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C49009C-2D96-ADCF-12BE-DC69FF6086BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C49009C-2D96-ADCF-12BE-DC69FF6086BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

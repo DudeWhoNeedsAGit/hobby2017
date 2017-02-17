@@ -11,12 +11,12 @@ public class FreeCamera : MonoBehaviour
     public KeyCode m_LeftButton = KeyCode.A;
     public KeyCode m_UpButton = KeyCode.Q;
     public KeyCode m_DownButton = KeyCode.E;
-    /*
+    
 	void Update ()
     {
         // translation
         
-/*        {
+        {
             Vector3 dir = Vector3.zero;
 			Move (m_ForwardButton, ref dir, transform.forward);
 			Move (m_BackwardButton, ref dir, -transform.forward);
@@ -37,7 +37,7 @@ public class FreeCamera : MonoBehaviour
             }
         }
     }
-    */
+    
     void Move (KeyCode key, ref Vector3 moveTo, Vector3 dir)
     {
         if (Input.GetKey (key))

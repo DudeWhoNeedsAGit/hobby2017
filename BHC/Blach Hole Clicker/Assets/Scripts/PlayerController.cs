@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
 	public float moveSpeed;
     private ClickScript clickScript;
     private ResourceManager resourcemanager;
+    public string objectType;
 
     private Vector3 moveDirection;
 
@@ -50,7 +51,17 @@ public class PlayerController : MonoBehaviour {
             crit = true;
             critValue = critValue * Random.Range(2, 4);
         }
-        StartCoroutine(CombatTextManager.Instance.createText(new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity, critValue.ToString(), Color.red, crit));
+
+        // dummy as showcase
+        if(objectType == "Star")
+        {
+            StartCoroutine(CombatTextManager.Instance.createText(new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity, "Gained SOLARMASS!  " + critValue.ToString(), Color.yellow, crit));
+        }
+        else
+        {
+            StartCoroutine(CombatTextManager.Instance.createText(new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity, critValue.ToString(), Color.red, crit));
+        }
+        
         clickScript.gold += critValue;
 
         resourcemanager.updateMass(critValue);

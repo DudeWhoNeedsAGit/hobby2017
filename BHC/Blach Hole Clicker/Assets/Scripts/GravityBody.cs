@@ -5,7 +5,8 @@ using System.Collections;
 public class GravityBody : MonoBehaviour {
 
 	public GravityAttractor attractor;
-	private Transform myTransform;
+    public Orbit orbit;
+    private Transform myTransform;
 
 	void Start () 
 	{
@@ -20,6 +21,9 @@ public class GravityBody : MonoBehaviour {
 		if (attractor)
 		{
 			attractor.Attract(myTransform);
-		}
+		}else if(orbit)
+        {
+            orbit.Attract(myTransform);
+        }
 	}
 }
